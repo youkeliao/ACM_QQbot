@@ -370,7 +370,7 @@ if __name__ == '__main__':
             await bot.send(event, res)
 
     @bot.on(MessageEvent)
-    async def query_ptezoj_contest(event: MessageEvent):
+    async def query_luogu_contest(event: MessageEvent):
         msg = "".join(map(str, event.message_chain[Plain]))
         if msg.strip().lower() == "luogu":
             global luogu
